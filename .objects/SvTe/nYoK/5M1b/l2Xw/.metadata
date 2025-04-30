@@ -1,0 +1,13 @@
+﻿{
+  "Name": "⚠️Important Notice✕",
+  "Type": "Element",
+  "Id": "l2XwxI3h3UG_bB-y4mjAXw",
+  "Reference": "j9oIsIELaEOG-GR5boL3tA/l2XwxI3h3UG_bB-y4mjAXw",
+  "ParentRef": "j9oIsIELaEOG-GR5boL3tA/5M1br6XqrECZxD5btpqFRg",
+  "Created": "2025-04-30T15:12:51.9645738Z",
+  "Updated": "2025-04-30T15:12:51.9645738Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

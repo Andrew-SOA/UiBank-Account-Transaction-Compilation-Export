@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Iw6kaHNOnUimhDXvzZoRNg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/welcome" CVScreenId="6e5c791a-54d8-4e06-8dd7-1dae5edbbe35" DesignTimeRectangle="352, 539, 558, 88" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='header' parentid='mat-mdc-dialog-15' tag='DIV' /&gt;" Guid="b5695147-50f6-4514-adef-322860e3db3a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UiBank-Welcome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="cb25398240c511c54b7ef5a0031bcc5e.png" xmlns="">0uCstEwlApEafA6x_5Av3tw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

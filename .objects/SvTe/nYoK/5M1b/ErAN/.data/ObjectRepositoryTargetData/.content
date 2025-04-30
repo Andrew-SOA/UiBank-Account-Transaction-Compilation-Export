@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1kHGOoUcYESBsue-Leu9_Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/welcome" CVScreenId="066bdbc5-403b-416b-ba6f-a2b8c225ed22" DesignTimeRectangle="499, 883, 264, 50" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='I agree to the Privacy Policy →' parentid='mat-mdc-dialog-3' tag='BUTTON' type='button' /&gt;" Guid="8820fe48-b6ca-49fd-816e-990b743311db" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UiBank-Welcome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="066bdbc5-403b-416b-ba6f-a2b8c225ed22" CvElementArea="498, 882, 266, 52" CvType="Button" DesignTimeRectangle="724, 898, 16, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-mdc-dialog-3' tag='STRONG' type='' class='' aaname='→' check:innerText='→' /&gt;" Guid="8d49d358-e749-4690-9f10-a4cb4b8e35ff" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c148120522ca2353d2a5aaac04f91337.png" xmlns="">0686gl8DeQUiPMLou4ZaihQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

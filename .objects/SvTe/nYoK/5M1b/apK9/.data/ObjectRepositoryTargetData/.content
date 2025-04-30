@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Mnes0fTQh0OVi2s8WdZCjQ" Reference="j9oIsIELaEOG-GR5boL3tA/apK9HzvjH029Oj2XBszqdQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/welcome" CVScreenId="29f74392-33d6-4ffc-b4eb-ef2952cc6dd9" DesignTimeRectangle="0, 0, 1277, 1447" DesignTimeScaleFactor="1" ElementType="Button" FuzzyAccuracy="1" Guid="7bcd6408-87ed-404d-8965-2c834e4e32da" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UiBank-Welcome' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="29f74392-33d6-4ffc-b4eb-ef2952cc6dd9" CvElementArea="498, 882, 266, 52" CvType="Button" DesignTimeRectangle="724, 898, 16, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mat-mdc-dialog-5' tag='STRONG' type='' class='' aaname='→' check:innerText='→' /&gt;" Guid="e184671f-f39e-4e04-921b-eda12a75e6e0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="edf88ba0e05302802088df65e91ef803.png" xmlns="">0mYbL3xdBZE2TxN3_Q3-riw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

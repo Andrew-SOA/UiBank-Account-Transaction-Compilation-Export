@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click -  Agree To Privacy Policy",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "apK9HzvjH029Oj2XBszqdQ",
+  "Reference": "j9oIsIELaEOG-GR5boL3tA/apK9HzvjH029Oj2XBszqdQ",
+  "ParentRef": "j9oIsIELaEOG-GR5boL3tA/5M1br6XqrECZxD5btpqFRg",
+  "Created": "2025-04-30T14:14:51.7566559Z",
+  "Updated": "2025-04-30T14:14:51.7566559Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
