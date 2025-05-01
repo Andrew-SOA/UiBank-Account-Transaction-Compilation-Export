@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zmDsnk0MHkGk4WIeE9z5nQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/welcome" CVScreenId="2ac22eff-0e23-4884-8891-4a008e5a13a2" CvElementArea="542, 853, 131, 65" CvTextArea="570, 874, 72, 26" CvTextArgument="Sign In" CvType="Button" DesignTimeRectangle="545, 855, 125, 61" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-white col-md-12' aaname='Sign In' check:innerText='Sign In' /&gt;" Guid="9a5b85a4-8ead-47b4-b29f-a8f00db7a6ad" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UiBank-Welcome' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2ac22eff-0e23-4884-8891-4a008e5a13a2" CvElementArea="468, 759, 277, 67" CvType="InputBox" DesignTimeRectangle="470, 759, 275, 66" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control uibank-input ng-untouched ng-pristine ng-valid' placeholder='Enter password' aaname='Password' /&gt;" Guid="570230aa-1d44-4e86-91af-055e7ffed08b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7232493b876389521605a9326d4cd160.png" xmlns="">0-TL1rjJ3MkmjKQorteoYVQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -4,8 +4,9 @@
   "description": "Downloads account transactions from UIBank and exports them to a CSV file",
   "main": "Main.xaml",
   "dependencies": {
-    "Custom.Utils.Library": "[1.0.1]",
-    "UiPath.System.Activities": "[25.4.2]"
+    "UiPath.Excel.Activities": "[3.0.1]",
+    "UiPath.System.Activities": "[25.4.2]",
+    "UiPath.UIAutomation.Activities": "[25.2.1-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
