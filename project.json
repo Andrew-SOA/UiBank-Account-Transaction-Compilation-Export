@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "UiBankAccountTransactionCompilationAndExport",
   "projectId": "6059275d-8c5b-44f9-9cbb-7f9506e54b3d",
   "description": "Downloads account transactions from UIBank and exports them to a CSV file",
