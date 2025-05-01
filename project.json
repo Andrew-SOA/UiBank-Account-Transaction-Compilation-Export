@@ -1,11 +1,11 @@
-{
+﻿{
   "name": "UiBankAccountTransactionCompilationAndExport",
   "projectId": "6059275d-8c5b-44f9-9cbb-7f9506e54b3d",
   "description": "Downloads account transactions from UIBank and exports them to a CSV file",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Excel.Activities": "[3.0.1]",
     "UiPath.System.Activities": "[25.4.2]",
-    "UiPath.Testing.Activities": "[24.10.1]",
     "UiPath.UIAutomation.Activities": "[25.2.1-preview]"
   },
   "webServices": [],
@@ -41,15 +41,7 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "8dc27bef-57cd-49c4-b703-f4aa88258d44",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\Download_Tranactions_VerifyNoExceptionsTestCases.xaml"
-      }
-    ],
+    "fileInfoCollection": [],
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
