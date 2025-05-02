@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Generate Yearly Report for Vendor",
+  "Type": "Screen",
+  "Id": "iDD1O9LbeUSp0z5FUJcMZg",
+  "Reference": "j9oIsIELaEOG-GR5boL3tA/iDD1O9LbeUSp0z5FUJcMZg",
+  "ParentRef": "j9oIsIELaEOG-GR5boL3tA/eoOO-Linek2CDjGS7Yfd6w",
+  "Created": "2025-05-01T13:40:05.3276302Z",
+  "Updated": "2025-05-01T13:40:05.3276302Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

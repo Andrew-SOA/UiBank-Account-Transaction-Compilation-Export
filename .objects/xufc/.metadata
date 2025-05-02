@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Generate Yearly Report for Vendor",
+  "Type": "App",
+  "Id": "xufc1tSSWkSC2gDJOfcEfQ",
+  "Reference": "j9oIsIELaEOG-GR5boL3tA/xufc1tSSWkSC2gDJOfcEfQ",
+  "Created": "2025-05-01T13:40:05.1553154Z",
+  "Updated": "2025-05-01T13:40:05.1553154Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
