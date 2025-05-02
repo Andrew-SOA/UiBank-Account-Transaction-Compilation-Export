@@ -1,2 +1,3 @@
 type,description,amount,balance,date
-transfer,Transfer to Account: 6810a80203e43559c02796d7,100,0,2025-04-30T08:21:39.108Z
+credit,Transfer from Account: 68109b2b03e43559c0278fb9,100,180,2025-04-30T13:36:44.350Z
+transfer,Transfer to Account: 68109b3603e43559c0278fba,20,80,2025-04-30T13:35:09.142Z

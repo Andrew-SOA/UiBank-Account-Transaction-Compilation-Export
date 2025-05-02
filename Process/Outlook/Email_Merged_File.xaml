@@ -3,7 +3,7 @@
     <x:Property Name="in_EmailSubject" Type="InArgument(x:String)" />
     <x:Property Name="in_EmailBody" Type="InArgument(x:String)" />
     <x:Property Name="in_EmailRecipient" Type="InArgument(scg:IEnumerable(x:String))" />
-    <x:Property Name="in_MergedCSVFileName" Type="InArgument(x:String)" />
+    <x:Property Name="in_MergedFilePath" Type="InArgument(x:String)" />
   </x:Members>
   <this:Email_Merged_File.in_EmailSubject>
     <InArgument x:TypeArguments="x:String" />
@@ -14,9 +14,9 @@
   <this:Email_Merged_File.in_EmailRecipient>
     <InArgument x:TypeArguments="scg:IEnumerable(x:String)" />
   </this:Email_Merged_File.in_EmailRecipient>
-  <this:Email_Merged_File.in_MergedCSVFileName>
+  <this:Email_Merged_File.in_MergedFilePath>
     <InArgument x:TypeArguments="x:String" />
-  </this:Email_Merged_File.in_MergedCSVFileName>
+  </this:Email_Merged_File.in_MergedFilePath>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
@@ -114,17 +114,17 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Sends an email with the transactions csv file to the reporting manager " DisplayName="Email_Merged_File" sap:VirtualizedContainerService.HintSize="1809,556.824" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Sends an email with the transactions csv file to the reporting manager " DisplayName="Email_Merged_File" sap:VirtualizedContainerService.HintSize="1803,579" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" Attachments="{x:Null}" ConnectionAccountName="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" AttachmentInputMode="Builder" AttachmentPaths="{x:Null}" AuthScopesInvalid="False" Bcc="{x:Null}" Body="[in_EmailBody]" Cc="{x:Null}" ConnectionId="891e271e-3605-4f9a-9688-d4427ab81e85" ContinueOnError="{x:Null}" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,425" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" Mailbox="{x:Null}" ReplyTo="{x:Null}" SaveAsDraft="True" SingleAttachment="{x:Null}" Subject="[in_EmailSubject]" TextBody="{x:Null}" To="[in_EmailRecipient]" UseConnectionService="True" UseSharedMailbox="False">
+    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[in_EmailBody]" ConnectionId="891e271e-3605-4f9a-9688-d4427ab81e85" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,525" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" SaveAsDraft="True" Subject="[in_EmailSubject]" To="[in_EmailRecipient]" UseConnectionService="True" UseSharedMailbox="False">
       <umam:SendMailConnections.AttachmentList>
         <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
-          <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath(in_MergedCSVFileName)]</InArgument>
+          <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath(in_MergedFilePath)]</InArgument>
         </scg:List>
       </umam:SendMailConnections.AttachmentList>
       <umam:SendMailConnections.AttachmentsBackup>
