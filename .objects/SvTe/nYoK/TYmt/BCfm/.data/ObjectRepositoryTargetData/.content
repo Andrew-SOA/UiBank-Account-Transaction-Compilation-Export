@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0PsPyx-RfUu7UEzI05Pj8g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/userprofile" CVScreenId="d698898f-aabb-4057-95e2-de1defeb94da" CvTextArea="519, 631, 86, 30" CvType="AnyWordGroup" DesignTimeRectangle="520, 626, 84, 35" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='STRONG' class='' /&gt;" Guid="0ee54186-0930-419c-84f3-e88d331bd973" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UiBank-Profile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d698898f-aabb-4057-95e2-de1defeb94da" CvTextArea="517, 605, 98, 17" CvTextArgument="Last Name" CvType="Text" DesignTimeRectangle="520, 600, 94, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Last Name' tag='LABEL' type='' class='small-text' check:innerText='Last Name' /&gt;" Guid="8a17625b-58f6-4ad1-9dbd-a1d4b6d98a19" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f657e4f7f3b7db04b6655c6bc6e4c2e2.png" xmlns="">0hyGhmWSlFEmpI8Jn5PKTVQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

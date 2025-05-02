@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8g0HlrfG10eA70N8YTQP3g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uibank.uipath.com/userprofile" CVScreenId="c550ec30-b4a9-4afa-90a8-62944a492129" CvTextArea="1519, 201, 78, 25" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="1510, 185, 96, 54" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Logout' tag='A' type='' class='nav-link text-dark' check:innerText='Logout' /&gt;" Guid="6d21e863-4691-45d3-8711-4fa2bbd4f841" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UiBank-Profile' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c550ec30-b4a9-4afa-90a8-62944a492129" CvTextArea="1430, 200, 70, 21" CvTextArgument="Profile" CvType="Text" DesignTimeRectangle="1422, 185, 88, 54" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Profile' tag='A' type='' class='nav-link text-dark' check:innerText='Profile' /&gt;" Guid="1543b33c-3595-4609-a632-ee42b12b8653" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="40f27932b3fb497142ee4e03d11e77eb.png" xmlns="">0bnlUeLh_nEaOAhdbkTXX-A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
