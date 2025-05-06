@@ -43,15 +43,7 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "9bf55428-75bf-402a-9a19-af692dd8560c",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\PracticeLoginTestCase.xaml"
-      }
-    ],
+    "fileInfoCollection": [],
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
