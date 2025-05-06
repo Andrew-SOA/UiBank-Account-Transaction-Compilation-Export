@@ -102,7 +102,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Iterates through the available accounts on the accounts page downloads the tranactions" DisplayName="Download_Transaction" sap:VirtualizedContainerService.HintSize="1803,1418" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Iterates through the available accounts on the accounts page downloads the tranactions" DisplayName="Download_Transaction" sap:VirtualizedContainerService.HintSize="917,1418" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -117,7 +117,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <uix:NApplicationCard CloseMode="Never" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="582,1191" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="3303aa29-0b7b-4717-bb97-8964866bcd8d">
+    <uix:NApplicationCard CloseMode="Always" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="582,1191" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="3303aa29-0b7b-4717-bb97-8964866bcd8d">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
