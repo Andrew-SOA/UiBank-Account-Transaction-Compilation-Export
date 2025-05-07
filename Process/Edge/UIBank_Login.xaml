@@ -105,7 +105,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="1098,2728" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="2196,2728" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pUserName" />
       <Variable x:TypeArguments="ss:SecureString" Name="pPassword" />

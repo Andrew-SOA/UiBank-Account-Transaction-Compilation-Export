@@ -102,7 +102,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2196,1190" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="565,1190" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
       <Variable x:TypeArguments="x:String" Name="pAccountName" />
@@ -150,7 +150,7 @@
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Email_Merged_File - Invoke Workflow File (Process\Outlook\Email_Merged_File.xaml)" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Process\Outlook\Email_Merged_File.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_EmailSubject">[pAccountName + " " + Now.ToString(“MMMM-yyyy”)]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_EmailSubject">[pAccountName + "-" + Now.ToString(“MMMM-yyyy”)]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_EmailBody">[Config("EmailBody").ToString]</InArgument>
         <InArgument x:TypeArguments="scg:IEnumerable(x:String)" x:Key="in_EmailRecipient">[Config("EmailRecipient").ToString().ParseArguments()]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_MergedFilePath">[pCSVFilePath]</InArgument>
