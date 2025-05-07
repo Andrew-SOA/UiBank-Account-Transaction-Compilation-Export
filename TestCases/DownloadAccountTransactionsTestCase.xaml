@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Download_Transactions_TestCase" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Download_Transactions_TestCase_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="DownloadAccountTransactionsTestCase" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="DownloadAccountTransactionsTestCase_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -29,89 +29,18 @@
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>UiPath.UIAutomationNext.Activities</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Platform.SyncObjects</x:String>
-      <x:String>System.Security</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Reflection</x:String>
-      <x:String>System.Linq.Expressions</x:String>
-      <x:String>UiPath.Shared.Activities.Business</x:String>
-      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
-      <x:String>Microsoft.Win32.SafeHandles</x:String>
-      <x:String>System.Numerics</x:String>
-      <x:String>System.Net</x:String>
-      <x:String>System.Globalization</x:String>
-      <x:String>System.Configuration.Assemblies</x:String>
-      <x:String>System.CodeDom.Compiler</x:String>
-      <x:String>System.Buffers</x:String>
-      <x:String>System.Buffers.Text</x:String>
-      <x:String>System.Buffers.Binary</x:String>
-      <x:String>System.Threading</x:String>
-      <x:String>System.Threading.Tasks</x:String>
-      <x:String>System.Threading.Tasks.Sources</x:String>
-      <x:String>System.Text</x:String>
-      <x:String>System.Text.Unicode</x:String>
-      <x:String>System.Security.Principal</x:String>
-      <x:String>System.Security.Permissions</x:String>
-      <x:String>System.Security.Cryptography</x:String>
-      <x:String>System.Runtime</x:String>
-      <x:String>System.Runtime.Remoting</x:String>
-      <x:String>System.Runtime.ExceptionServices</x:String>
-      <x:String>System.Runtime.ConstrainedExecution</x:String>
-      <x:String>System.Runtime.Versioning</x:String>
-      <x:String>System.Runtime.Loader</x:String>
-      <x:String>System.Runtime.Intrinsics</x:String>
-      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
-      <x:String>System.Runtime.Intrinsics.Arm</x:String>
-      <x:String>System.Runtime.Intrinsics.X86</x:String>
-      <x:String>System.Runtime.InteropServices</x:String>
-      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
-      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
-      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
-      <x:String>System.Runtime.CompilerServices</x:String>
-      <x:String>System.Resources</x:String>
-      <x:String>System.Reflection.Metadata</x:String>
-      <x:String>System.Reflection.Emit</x:String>
-      <x:String>System.IO.Enumeration</x:String>
-      <x:String>System.Diagnostics.SymbolStore</x:String>
-      <x:String>System.Diagnostics.Contracts</x:String>
-      <x:String>System.Diagnostics.CodeAnalysis</x:String>
-      <x:String>System.Diagnostics.Tracing</x:String>
-      <x:String>System.Collections.Concurrent</x:String>
-      <x:String>Internal</x:String>
-      <x:String>System.CodeDom</x:String>
-      <x:String>Microsoft.CSharp</x:String>
-      <x:String>System.Linq.Expressions.Interpreter</x:String>
-      <x:String>System.Dynamic</x:String>
-      <x:String>UiPath.Workflow.Runtime</x:String>
-      <x:String>System.Activities.Tracking</x:String>
-      <x:String>System.Activities.Statements.Tracking</x:String>
-      <x:String>System.Activities.Runtime</x:String>
-      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
-      <x:String>System.Activities.ParallelTracking</x:String>
-      <x:String>System.Activities.Hosting</x:String>
-      <x:String>System.Activities.Persistence</x:String>
-      <x:String>System.Activities.DurableInstancing</x:String>
-      <x:String>System.ComponentModel.Design.Serialization</x:String>
-      <x:String>System.Text.RegularExpressions</x:String>
-      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
-      <x:String>System.Timers</x:String>
-      <x:String>System.ComponentModel.Design</x:String>
-      <x:String>System.Xml.Schema</x:String>
-      <x:String>System.Xml.Xsl</x:String>
-      <x:String>System.Xml.Xsl.Runtime</x:String>
-      <x:String>System.Xml.XPath</x:String>
-      <x:String>System.Xml.Resolvers</x:String>
-      <x:String>System.Xml.Serialization</x:String>
-      <x:String>Microsoft.VisualBasic.FileIO</x:String>
-      <x:String>UiPath.Testing</x:String>
       <x:String>UiPath.Testing.Activities</x:String>
-      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
-      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
-      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -144,11 +73,14 @@
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
@@ -157,74 +89,9 @@
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
-      <AssemblyReference>System.IO.Packaging</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
-      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
-      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
-      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
-      <AssemblyReference>System.IO.Pipes</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
-      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
-      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
-      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
-      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
-      <AssemblyReference>System.Net.WebClient</AssemblyReference>
-      <AssemblyReference>System.Net.Primitives</AssemblyReference>
-      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
-      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
-      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
-      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
-      <AssemblyReference>System.Net.Requests</AssemblyReference>
-      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
-      <AssemblyReference>System.CodeDom</AssemblyReference>
-      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
-      <AssemblyReference>System.Threading</AssemblyReference>
-      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
-      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
-      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
-      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
-      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
-      <AssemblyReference>System.Security.Claims</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
-      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
-      <AssemblyReference>System.Windows.Forms</AssemblyReference>
-      <AssemblyReference>System.Resources.Writer</AssemblyReference>
-      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
-      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
-      <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
-      <AssemblyReference>System.Net.Security</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
-      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
-      <AssemblyReference>System.Xml.XPath.XDocument</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Testing</AssemblyReference>
-      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Download_Transactions_TestCase" sap:VirtualizedContainerService.HintSize="1803,2580" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DownloadAccountTransactionsTestCase" sap:VirtualizedContainerService.HintSize="1276,2540" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -314,7 +181,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NTypeInto>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cae32c2a-930f-4b2c-8f1a-c4bae183e5e5" Version="V4">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cae32c2a-930f-4b2c-8f1a-c4bae183e5e5" Version="V4">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="uibank.uipath.com/welcome" CVScreenId="55d7708c-f78e-45f8-9a9d-bf66a83cee6b" ContentHash="huias34e_ki-WSrZQGXqvA" DesignTimeRectangle="588, 619, 102, 50" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="97b555cf-ac57-4dfa-8c4d-53c34778c498" InformativeScreenshot="e089c93bfc855c2c3d56d078f44a660b.png" Reference="j9oIsIELaEOG-GR5boL3tA/BcBeWwNDUE-lD6wy1apAtg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UiBank-Welcome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
                   </uix:NClick.Target>
@@ -329,7 +196,7 @@
                     </uix:VerifyExecutionOptions>
                   </uix:NClick.VerifyOptions>
                 </uix:NClick>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I agree to the Privacy'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cae32c2a-930f-4b2c-8f1a-c4bae183e5e5" Version="V4">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I agree to the Privacy'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cae32c2a-930f-4b2c-8f1a-c4bae183e5e5" Version="V4">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="uibank.uipath.com/welcome" CVScreenId="3ac93ffa-fa72-4e79-b35e-d3c8779e2011" ContentHash="SQR9VUL73kGc8LMvYeyQNA" CvElementArea="498, 882, 266, 52" CvTextArea="520, 898, 202, 20" CvTextArgument="I agree to the Privacy Policy" CvType="Button" DesignTimeRectangle="499, 883, 264, 50" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='I agree to the Privacy Policy →' parentid='mat-mdc-dialog-17' tag='BUTTON' type='button' class='btn center-button btn-black' check:innerText='I agree to the Privacy Policy →' /&gt;" Guid="045e20bb-3cbc-4fac-839e-fa6feff3feb5" InformativeScreenshot="c148120522ca2353d2a5aaac04f91337.png" Reference="j9oIsIELaEOG-GR5boL3tA/KLeKFpLAXUGGf1KalQlzeg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UiBank-Welcome' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -369,10 +236,9 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch - Download_Transaction" sap:VirtualizedContainerService.HintSize="418,950" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <TryCatch DisplayName="Try Catch - Download_Transaction" sap:VirtualizedContainerService.HintSize="418,950" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -380,7 +246,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="416,350" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="416,350" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Default="https://uibank.uipath.com/accounts" Name="UiBank_Accounts_URL" />
             </Sequence.Variables>
@@ -389,7 +255,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Download_Transaction - Invoke Workflow File (Process\Edge\Download_Transaction.xaml)" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Process\Edge\Download_Transaction.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Download_Transaction - Invoke Workflow File (Process\Edge\Download_Transaction.xaml)" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Process\Edge\Download_Transaction.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_UiBank_Accounts_URL">[UiBank_Accounts_URL]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
@@ -400,24 +266,24 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InvokeWorkflowFile>
-            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify No Exceptions Thrown " Expression="True" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+            <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify No Exceptions Thrown " Expression="True" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
           </Sequence>
         </TryCatch.Try>
         <TryCatch.Catches>
-          <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+          <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
             <ActivityAction x:TypeArguments="s:Exception">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,346" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,346" sap2010:WorkflowViewState.IdRef="Sequence_9">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message - Exception Messge" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Exception caught during 'Download_Tranactions_VerifyNoExceptionsTestCases' Exception: &quot; + exception.StackTrace]" />
-                <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Exception Was Thrown" Expression="False" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="VerifyExpression_3" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <ui:LogMessage DisplayName="Log Message - Exception Messge" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Exception caught during 'Download_Tranactions_VerifyNoExceptionsTestCases' Exception: &quot; + exception.StackTrace]" />
+                <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Exception Was Thrown" Expression="False" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -430,7 +296,7 @@
           </Catch>
         </TryCatch.Catches>
         <TryCatch.Finally>
-          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_15">
+          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -440,14 +306,13 @@
         </TryCatch.Finally>
       </TryCatch>
     </Sequence>
-    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="552,1375" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="552,1335" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Deletes the downloaded test files, logs out of UiBank and kills MS Edge" DisplayName="Sequence - Clean Up Test" sap:VirtualizedContainerService.HintSize="518,1292" sap2010:WorkflowViewState.IdRef="Sequence_16">
+      <Sequence sap2010:Annotation.AnnotationText="Deletes the downloaded test files, logs out of UiBank and kills MS Edge" DisplayName="Sequence - Clean Up Test" sap:VirtualizedContainerService.HintSize="518,1252" sap2010:WorkflowViewState.IdRef="Sequence_10">
         <Sequence.Variables>
           <Variable x:TypeArguments="si:DirectoryInfo" Name="pFolderInfo" />
           <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="pSplitFullName" />
@@ -467,7 +332,7 @@
               <ActivityAction.Argument2>
                 <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
               </ActivityAction.Argument2>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_18">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_11">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -484,13 +349,13 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:ForEachFileX>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Edge UiBank-Details" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,569" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="772eb264-850c-4b63-906b-7c42346f22ea" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Edge UiBank-Details" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,529" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="772eb264-850c-4b63-906b-7c42346f22ea" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_19">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_12">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -524,7 +389,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </uix:NApplicationCard>
-        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process - MS Edge" sap:VirtualizedContainerService.HintSize="484,156" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="msedge">
+        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process - MS Edge" sap:VirtualizedContainerService.HintSize="484,156" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="msedge">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>

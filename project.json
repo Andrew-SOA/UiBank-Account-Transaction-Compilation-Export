@@ -45,11 +45,46 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "InProgress",
-        "testCaseId": "5552fe19-8ef7-4050-ac74-11a7cd79aa97",
+        "editingStatus": "Publishable",
+        "testCaseId": "443aa4ab-f77f-4e3b-a8c6-975dc40ff99f",
         "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Process\\Outlook\\EmailTestCase.xaml"
+        "fileName": "TestCases\\DownloadAccountTransactionsTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "62508fba-bfc1-453f-bd34-929e0ff76f5a",
+        "testCaseType": "TestCase",
+        "fileName": "TestCases\\EmailSentSuccessfulyTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2830d854-67b8-4a0e-a6bb-13e53a435b08",
+        "testCaseType": "TestCase",
+        "fileName": "TestCases\\MergeCSVDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7be6eaa5-118e-4048-9734-ddcde0e88ccc",
+        "testCaseType": "TestCase",
+        "fileName": "TestCases\\NavigateToAccountsTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cb0425df-3205-4fb8-a725-a42078c17ce5",
+        "testCaseType": "TestCase",
+        "fileName": "TestCases\\NonCSVFormattedFileTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "82962253-002f-4d5a-8521-33ccf5be08f2",
+        "testCaseType": "TestCase",
+        "fileName": "TestCases\\UiBankInvalidLoginTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d52923a4-3c9a-4535-b00e-709de5473497",
+        "testCaseType": "TestCase",
+        "fileName": "TestCases\\UIBankLoginTestCase.xaml"
       }
     ],
     "saveToCloud": false
