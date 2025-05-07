@@ -43,7 +43,15 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5552fe19-8ef7-4050-ac74-11a7cd79aa97",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Process\\Outlook\\EmailTestCase.xaml"
+      }
+    ],
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
