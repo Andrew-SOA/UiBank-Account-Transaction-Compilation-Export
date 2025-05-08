@@ -102,14 +102,14 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Iterates through the available accounts on the accounts page downloads the tranactions" DisplayName="Download_Transaction" sap:VirtualizedContainerService.HintSize="582,1418" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Iterates through the available accounts on the accounts page downloads the tranactions" DisplayName="Download_Transaction" sap:VirtualizedContainerService.HintSize="1167.6000000000001,1462.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message - Enter Download_Transaction" sap:VirtualizedContainerService.HintSize="582,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Downloading Transactions&quot;]">
+    <ui:LogMessage DisplayName="Log Message - Enter Download_Transaction" sap:VirtualizedContainerService.HintSize="580,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Downloading Transactions&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -117,33 +117,33 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <uix:NApplicationCard CloseMode="Always" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="582,1191" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="3303aa29-0b7b-4717-bb97-8964866bcd8d">
+    <uix:NApplicationCard CloseMode="Always" DisplayName="Open UiBank Accounts" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="580,1233.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="3303aa29-0b7b-4717-bb97-8964866bcd8d">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548,951" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546.4,993.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NForEachUiElement DisplayName="For Each Account link On Accounts Page" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='strong' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="514,889" sap2010:WorkflowViewState.IdRef="NForEachUiElement_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="3303aa29-0b7b-4717-bb97-8964866bcd8d" Version="V4">
+            <uix:NForEachUiElement DelayBefore="1" DisplayName="For Each Account link On Accounts Page" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='strong' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="512.8,932" sap2010:WorkflowViewState.IdRef="NForEachUiElement_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="3303aa29-0b7b-4717-bb97-8964866bcd8d" Version="V4">
               <uix:NForEachUiElement.Body>
                 <ActivityAction x:TypeArguments="x:Int32">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,599" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,600" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click -  Account Link" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,205" sap2010:WorkflowViewState.IdRef="NClick_1" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3303aa29-0b7b-4717-bb97-8964866bcd8d" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click -  Account Link" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,205.6" sap2010:WorkflowViewState.IdRef="NClick_1" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3303aa29-0b7b-4717-bb97-8964866bcd8d" Version="V4">
                       <uix:NClick.VerifyOptions>
                         <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                           <uix:VerifyExecutionOptions.Retry>
@@ -161,7 +161,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - Download Transactions" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3303aa29-0b7b-4717-bb97-8964866bcd8d" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click - Download Transactions" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3303aa29-0b7b-4717-bb97-8964866bcd8d" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="uibank.uipath.com/accounts/account-details/6810969403e43559c027708e/88/1212" CVScreenId="cf326b16-6e99-44a4-852e-e245ab389e25" ContentHash="b-GX54PV6UCqVOtN5Ifdfw" DesignTimeRectangle="789, 414, 214, 38" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='downloadTransactions' tag='DIV' /&gt;" Guid="0d331423-db9e-47ae-a2f0-e8f7bca98326" InformativeScreenshot="4f2555bb1222e12aa192f23b0b5fea91.png" Reference="j9oIsIELaEOG-GR5boL3tA/U6qXPdycmESga71Yae9pGg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='UiBank-Details' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
                       </uix:NClick.Target>
@@ -198,6 +198,7 @@
               </uix:NForEachUiElement.Target>
               <uix:NForEachUiElement.Variables>
                 <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
+                <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
               </uix:NForEachUiElement.Variables>
               <uix:NForEachUiElement.VariablesMetadata>
                 <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">

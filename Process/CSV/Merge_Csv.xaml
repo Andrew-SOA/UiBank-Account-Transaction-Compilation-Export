@@ -113,7 +113,7 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Merge_Csv" sap:VirtualizedContainerService.HintSize="1821,1423" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Merge_Csv" sap:VirtualizedContainerService.HintSize="1167.6000000000001,1436.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_CSVOutput" />
       <Variable x:TypeArguments="sd:DataTable" Default="[new DataTable()]" Name="DtMerged" />
@@ -123,8 +123,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start Of Merging Csv&quot;]" />
-    <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="{x:Null}" Folder="Data\TempTransactions" sap:VirtualizedContainerService.HintSize="484,786" sap2010:WorkflowViewState.IdRef="ForEachFileX_2" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="483.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start Of Merging Csv&quot;]" />
+    <ui:ForEachFileX DisplayName="For Each Downloaded Transactions" Folder="Data\TempTransactions" sap:VirtualizedContainerService.HintSize="483.2,794.4" sap2010:WorkflowViewState.IdRef="ForEachFileX_2" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
       <ui:ForEachFileX.Body>
         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
           <ActivityAction.Argument1>
@@ -133,7 +133,7 @@
           <ActivityAction.Argument2>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
           </ActivityAction.Argument2>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,496" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,499.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="DTInput" />
             </Sequence.Variables>
@@ -142,9 +142,9 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ReadCsvFile FilePath="{x:Null}" DataTable="[DTInput]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" Encoding="{x:Null}" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" IgnoreQuotes="{x:Null}" PathResource="[LocalResource.FromPath(CurrentFile.FullName)]" />
-            <ui:MergeDataTable Destination="[DtMerged]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="416,165" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add" Source="[DTInput]" />
-            <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[CurrentFile.FullName]">
+            <ui:ReadCsvFile FilePath="{x:Null}" DataTable="[DTInput]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" PathResource="[LocalResource.FromPath(CurrentFile.FullName)]" />
+            <ui:MergeDataTable Destination="[DtMerged]" DisplayName="Merge Csv's" sap:VirtualizedContainerService.HintSize="416,166.4" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add" Source="[DTInput]" />
+            <ui:DeleteFileX DisplayName="Delete Downloaded Csv" sap:VirtualizedContainerService.HintSize="416,104" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[CurrentFile.FullName]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -156,8 +156,8 @@
         </ActivityAction>
       </ui:ForEachFileX.Body>
     </ui:ForEachFileX>
-    <ui:OutputDataTable DataTable="[DtMerged]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="484,112" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[str_CSVOutput]" />
-    <ui:WriteTextFile ContinueOnError="{x:Null}" DisplayName="Write Text File" Encoding="{x:Null}" File="{x:Null}" FileName="[in_FilePath]" sap:VirtualizedContainerService.HintSize="484,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[str_CSVOutput]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;CSV's Merged&quot;]" />
+    <ui:OutputDataTable DataTable="[DtMerged]" DisplayName="Output Merged Datatable to Text" sap:VirtualizedContainerService.HintSize="483.2,112.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[str_CSVOutput]" />
+    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Merged Csv" FileName="[in_FilePath]" sap:VirtualizedContainerService.HintSize="483.2,166.4" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[str_CSVOutput]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="483.2,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;CSV's Merged&quot;]" />
   </Sequence>
 </Activity>

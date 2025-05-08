@@ -114,14 +114,14 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Sends an email with the transactions csv file to the reporting manager " DisplayName="Email_Merged_File" sap:VirtualizedContainerService.HintSize="571,606.024" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Sends an email with the transactions csv file to the reporting manager " DisplayName="Email_Merged_File" sap:VirtualizedContainerService.HintSize="1167.6000000000001,584.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[in_EmailBody]" ConnectionId="891e271e-3605-4f9a-9688-d4427ab81e85" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,525" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" SaveAsDraft="True" Subject="[in_EmailSubject]" To="[in_EmailRecipient]" UseConnectionService="True" UseSharedMailbox="False">
+    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" ConnectionAccountName="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" AttachmentInputMode="Builder" AttachmentPaths="{x:Null}" Attachments="{x:Null}" AuthScopesInvalid="False" Bcc="{x:Null}" Body="[in_EmailBody]" Cc="{x:Null}" ConnectionId="d84e99bd-3153-4a64-a361-7f0a0bc3d21b" ContinueOnError="{x:Null}" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,530.4" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" Mailbox="{x:Null}" ReplyTo="{x:Null}" SaveAsDraft="True" SingleAttachment="{x:Null}" Subject="[in_EmailSubject]" TextBody="{x:Null}" To="[in_EmailRecipient]" UseConnectionService="True" UseSharedMailbox="False">
       <umam:SendMailConnections.AttachmentList>
         <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
           <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath(in_MergedFilePath)]</InArgument>

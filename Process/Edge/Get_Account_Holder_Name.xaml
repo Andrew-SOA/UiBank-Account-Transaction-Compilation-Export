@@ -100,14 +100,14 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get_Account_Holder_Name" sap:VirtualizedContainerService.HintSize="1473.2,1563.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Get_Account_Holder_Name" sap:VirtualizedContainerService.HintSize="1167.6000000000001,1563.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start of Gettnigs Accouts Name&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge UiBank-Profile" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="500.8,1365.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="1aa71867-562d-49c5-b11f-54a64a87f73f" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open UIBank Account Page" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="500.8,1365.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="1aa71867-562d-49c5-b11f-54a64a87f73f" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -145,7 +145,7 @@
                 </uix:TargetAnchorable>
               </uix:NGetText.Target>
             </uix:NGetText>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign DisplayName="Combine First and Last Name" sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[out_Account_Name]</OutArgument>
               </Assign.To>
